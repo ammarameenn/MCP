@@ -1,2 +1,2 @@
 # MCP
-Weekend filler
+JUst an implementation of MCP to test functionality
