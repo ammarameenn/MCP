@@ -10,3 +10,43 @@ This project proves the viability of self-hosted AI pipelines by:
 - Implementing secure tool integration via MCP protocol
 - Processing real-time data while maintaining privacy boundaries
 - Demonstrating modular, API-driven architecture suitable for creative applications
+
+## 🏗️ Architecture: Privacy-First AI Services
+
+### Key Privacy Principles Demonstrated:
+
+✅ No data leaves local environment
+✅ Self-hosted models with full control
+✅ Modular tool architecture for easy extension
+✅ Secure internal APIs only
+
+### 🎯 Current functionality
+This project showcases how MCP enables seamless integration between Large Language Models and external APIs. The demo consists of:
+
+- **MCP Server**: Exposes weather tools (alerts & forecasts) via standardized MCP protocol
+- **LLM Client**: Uses PraisonAI Agents with local Ollama models to interact with weather tools
+- **Real-time Data**: Fetches live weather information from the US National Weather Service
+
+### 📋 Example Interactions
+#### Weather Alerts Query
+```
+🧑 You: Check weather alerts for Florida
+🤖 Agent: I'll check the current weather alerts for Florida.
+
+Current active alerts for FL:
+
+Event: Hurricane Warning
+Area: Southeast Florida
+Severity: Extreme
+Description: Hurricane conditions expected within 36 hours...
+Instructions: Complete preparations immediately...
+Forecast Query
+
+🧑 You: What's the weather forecast for San Francisco? (37.7749, -122.4194)
+🤖 Agent: Here's the 5-day forecast for San Francisco:
+
+Tonight:
+Temperature: 58°F
+Wind: 10 mph W
+Forecast: Partly cloudy with patchy fog developing after midnight...
+```
