@@ -75,27 +75,33 @@ pip install -r requirements.txt
 
 #### Project Structure
 MCP
-├── server.py          # MCP server implementation
-├── client.py          # Client for testing server connectivity
-├── requirements.txt   # Python dependencies
-├── .gitignore        # Git ignore patterns
-└── README.md         # This file
+├── server.py          # MCP server implementation  
+├── client.py          # Client for testing server connectivity  
+├── requirements.txt   # Python dependencies  
+├── .gitignore        # Git ignore patterns  
+└── README.md         # This file  
 
 #### Quick Start
-Follow these steps to get the system running:
-Step 1: Start the MCP Server
+Follow these steps to get the system running:  
+
+**Step 1**: Start the MCP Server  
+
 ```bash
 #Open your first terminal and run:
 python server.py
 # The server will start and listen for incoming connections. You should see output indicating the server is running.
 ```
-Step 2: Start Ollama Service
+
+**Step 2**: Start Ollama Service  
+
 ```bash
 # Open a second terminal and start the Ollama service:
 ollama serve
 #This command starts the Ollama daemon that will handle model inference requests. Keep this terminal open while using the system.
 ```
-Step 3: Test the Connection
+
+**Step 3**: Test the Connection  
+
 ```bash
 # Open a third terminal and run the client to test the connection:
 python client.py
