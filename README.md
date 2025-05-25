@@ -12,7 +12,7 @@ This project proves the viability of self-hosted AI pipelines by:
 - Demonstrating modular, API-driven architecture suitable for creative applications
 
 ## 🏗️ Architecture: Privacy-First AI Services
-[MCP Architecture](MCP.drawio.png)
+![MCP Architecture](MCP.drawio.png)
 
 ### Key Privacy Principles Demonstrated:
 
