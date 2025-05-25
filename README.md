@@ -16,10 +16,10 @@ This project proves the viability of self-hosted AI pipelines by:
 
 ### Key Privacy Principles Demonstrated:
 
-✅ No data leaves local environment
-✅ Self-hosted models with full control
-✅ Modular tool architecture for easy extension
-✅ Secure internal APIs only
+- ✅ No data leaves local environment
+- ✅ Self-hosted models with full control
+- ✅ Modular tool architecture for easy extension
+- ✅ Secure internal APIs only
 
 ### 🎯 Current functionality
 This project showcases how MCP enables seamless integration between Large Language Models and external APIs. The demo consists of:
@@ -27,6 +27,26 @@ This project showcases how MCP enables seamless integration between Large Langua
 - **MCP Server**: Exposes weather tools (alerts & forecasts) via standardized MCP protocol
 - **LLM Client**: Uses PraisonAI Agents with local Ollama models to interact with weather tools
 - **Real-time Data**: Fetches live weather information from the US National Weather Service
+
+### Get started: Prerequisites
+#### System Requirements
+
+- Linux Operating System (Ollama is optimized for Linux environments)
+- Python 3.8 or higher
+- Git (for cloning the repository)
+
+#### Ollama Installation
+
+```bash
+# Before running this project, you need to install Ollama on your Linux system:
+curl -fsSL https://ollama.com/install.sh | sh
+```
+Alternatively, you can download and install Ollama manually from [ollama.com](https://ollama.com/download/linux)
+
+#### Verify Ollama Installation
+```bash
+ollama --version
+```
 
 ### 📋 Example Interactions
 #### Weather Alerts Query
