@@ -2,7 +2,9 @@ from typing import Any
 import httpx
 from mcp.server.fastmcp import FastMCP
 
-mcp = FastMCP(name="weather", host='127.0.0.1', port='8080', timeout = 30)
+# changing host from 127.0.0.1 to 0.0.0.0 for container
+# mcp = FastMCP(name="weather", host='0.0.0.0', port=8080, timeout = 30)
+mcp = FastMCP("weather")
 
 NWS_API_BASE = "https://api.weather.gov"
 USER_AGENT = "weather-app/1.0"
@@ -90,6 +92,6 @@ Forecast: {period['detailedForecast']}
 
 if __name__ == "__main__":
         print('Starting weather MCP server on port 8080...')
-        mcp.run(transport  = 'stdio')
+        mcp.run()
         
 
