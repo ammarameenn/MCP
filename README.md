@@ -47,6 +47,62 @@ Alternatively, you can download and install Ollama manually from [ollama.com](ht
 ```bash
 ollama --version
 ```
+#### Configuration
+Ollama Models
+Before using the system, you may need to pull specific models:
+```bash
+# Example: Pull a popular model
+ollama pull llama3.2
+
+# List available models
+ollama list
+
+# Remove a model if needed
+ollama rm <model-name>
+```
+
+#### installation
+```bash
+1. Clone the Repository
+git clone https://github.com/ammarameenn/MCP.git
+cd MCP/
+2. Create Virtual Environment (Recommended)
+python -m venv venv # or python3 depending on your installation
+source venv/bin/activate  # On Linux
+3. Install Dependencies
+pip install -r requirements.txt
+```
+
+#### Project Structure
+MCP
+├── server.py          # MCP server implementation
+├── client.py          # Client for testing server connectivity
+├── requirements.txt   # Python dependencies
+├── .gitignore        # Git ignore patterns
+└── README.md         # This file
+
+#### Quick Start
+Follow these steps to get the system running:
+Step 1: Start the MCP Server
+```bash
+#Open your first terminal and run:
+python server.py
+# The server will start and listen for incoming connections. You should see output indicating the server is running.
+```
+Step 2: Start Ollama Service
+```bash
+# Open a second terminal and start the Ollama service:
+ollama serve
+#This command starts the Ollama daemon that will handle model inference requests. Keep this terminal open while using the system.
+```
+Step 3: Test the Connection
+```bash
+# Open a third terminal and run the client to test the connection:
+python client.py
+#This will verify that your MCP server can successfully communicate with Ollama.
+# Now you are ready to ask questions to your agent with custom tools
+```
+
 
 ### 📋 Example Interactions
 #### Weather Alerts Query
